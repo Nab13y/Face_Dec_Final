@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; /* Added to position the footer correctly */
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px; /* Position the footer at the bottom */
+      left: 50%;
+      transform: translateX(-50%); /* Center the footer */
+      text-align: center;
+      font-size: 14px;
+      color: #666; /* Gray color for the text */
+    }
+  </style>
+</head>
+<body>
+  <video id="video" width="720" height="560" autoplay muted></video>
+
+  <footer>
+    <p>Copyright &copy; 2024 by Nobin | All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
